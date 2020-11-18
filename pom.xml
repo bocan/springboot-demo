@@ -57,9 +57,10 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 
-    <plugin>
+   <plugin>
       <groupId>org.jacoco</groupId>
       <artifactId>jacoco-maven-plugin</artifactId>
+      <version>0.8.6</version>
       <configuration>
         <append>true</append>
       </configuration>
