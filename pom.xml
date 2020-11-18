@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>rest-service</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.5</version>
 	<name>rest-service</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -51,10 +51,10 @@
 	</dependencies>
 
     <scm>
-        <connection>scm:git:http://127.0.0.1/dummy</connection>
-        <developerConnection>scm:git:https://127.0.0.1/dummy</developerConnection>
+        <connection>scm:git:https://github.com/bocan/springboot-demo.git</connection>
+        <developerConnection>scm:git:https://github.com/bocan/springboot-demo.git</developerConnection>
         <tag>HEAD</tag>
-        <url>http://127.0.0.1/dummy</url>
+        <url>https://github.com/bocan/springboot-demo</url>
     </scm>
 
 	<build>
