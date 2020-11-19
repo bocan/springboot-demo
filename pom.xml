@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>rest-service</artifactId>
-	<version>0.0.5</version>
+	<version>1.0.5-SNAPSHOT</version>
 	<name>rest-service</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -51,10 +51,7 @@
 	</dependencies>
 
     <scm>
-        <connection>scm:git:https://github.com/bocan/springboot-demo.git</connection>
         <developerConnection>scm:git:https://github.com/bocan/springboot-demo.git</developerConnection>
-        <tag>HEAD</tag>
-        <url>https://github.com/bocan/springboot-demo</url>
     </scm>
 
 	<build>
@@ -87,31 +84,17 @@
       </executions>
     </plugin>
 
-
       <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>buildnumber-maven-plugin</artifactId>
-        <version>1.4</version>
-        <executions>
-          <execution>
-            <phase>validate</phase>
-            <goals>
-              <goal>create</goal>
-            </goals>
-          </execution>
-        </executions>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.0.0-M1</version>
         <configuration>
-          <doCheck>true</doCheck>
-          <doUpdate>false</doUpdate>
+          <tagNameFormat>v@{project.version}</tagNameFormat>
         </configuration>
       </plugin>
 
 
 		</plugins>
-
-
-    <finalName>${project.artifactId}-${project.version}-r${buildNumber}</finalName>
-
 
 	</build>
 
