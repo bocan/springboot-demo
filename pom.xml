@@ -22,6 +22,19 @@
         <sonar.junit.reportPaths>target/surefire-reports</sonar.junit.reportPaths>
 	</properties>
 
+<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>a0orkveovmrrt-artifactory-primary-0-releases</name>
+        <url>https://cloudcauldron.jfrog.io/artifactory/fu-maven</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>a0orkveovmrrt-artifactory-primary-0-snapshots</name>
+        <url>https://cloudcauldron.jfrog.io/artifactory/fu-maven</url>
+    </snapshotRepository>
+</distributionManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
