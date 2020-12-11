@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>rest-service</artifactId>
-	<version>1.0.6-SNAPSHOT</version>
+	<version>1.0.6</version>
 	<name>rest-service</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -66,7 +66,7 @@
 
     <scm>
         <developerConnection>scm:git:https://github.com/bocan/springboot-demo.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>v1.0.6</tag>
   </scm>
 
 	<build>
